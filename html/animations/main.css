@@ -1,0 +1,161 @@
+#carre{
+    background-color: red;
+    height: 400px;
+    width: 400px;
+    transform: rotate(45deg);
+    position: absolute;
+    top:100px;
+    left: 100px;
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
+
+@keyframes rotation {
+	0% {
+		transform: rotate(0);
+	}
+
+	10%
+	{
+		transform: rotate(10deg);
+	}
+	100%
+	{
+		transform: rotate(3600deg);
+	}
+}
+
+div {display: inline-block;}
+
+.ronds {
+
+animation: clignotement 1.2s infinite alternate-reverse;
+border-radius: 50%;
+
+width: 40px;
+height: 40px;
+margin: 5px;
+
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+#rond1{
+	animation-delay: 0.4s;
+	 
+}
+
+#rond2{
+	animation-delay:  0.8s;
+	}
+#rond3{
+	animation-delay:  1.2s;
+}
+
+@keyframes clignotement{
+	0% {
+		background-color: black;
+	}
+	100% {background-color: lightgrey;
+	}
+}
+
+
+
+#balle{
+
+animation: fall 5s infinite ;
+background-color: green;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+position: absolute;
+
+
+}
+
+.container{
+	position: absolute;
+
+	top: 10px;
+	left: 10px ;
+	height: 800px ;
+	width: 40px;
+	border: 1px solid black;
+
+
+}
+
+@keyframes fall{
+	0% {
+		top:0;
+
+	}
+	20% {
+		top:100%;
+	}
+
+	40% {
+		top:50%;
+	}
+
+	60%{
+		top:100%;
+	}
+
+	80%{
+		top:75%;
+	}
+
+	100% {
+		top:100%;
+	}
+
+
+}
+
+#child1{
+	background-color: orange;
+}
+#child2{
+	background-color: lightred;
+}
+#child3{
+	background-color: lightgreen;
+}
+#child4{
+	background-color: orange;
+}
+#child5{
+	background-color: orange;
+}
+#child6{
+	background-color: orange;
+}
+#child7{
+	background-color: sienna;
+}
+#child8{
+	background-color: yellowgreen;
+}
+#child9{
+	background-color: orange;
+}
+
+
+
+.child{
+	border-radius: 20%;
+	margin:0;
+	display: block;
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	left: 0;
+	top:0;
+	border: 2px solid black;
+
+}

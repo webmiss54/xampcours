@@ -1,0 +1,42 @@
+
+html, body {
+	width:100vw;
+	margin:0;
+padding:0; 
+}
+
+.clearfix {
+	clear: both;
+}
+
+
+.imgcenter {
+	display:block;
+	margin:auto;
+	 width: 120px;
+	 height: 120px;
+
+
+}
+
+.flotte {
+float:left;
+margin-right: 10px;
+	
+}
+
+h1,h2{
+	text-align: center;
+}
+
+p{
+	text-align: justify;
+	padding: 10px;
+
+
+}
+
+.bg{
+	background-color: lightblue;
+
+}

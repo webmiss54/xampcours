@@ -1,0 +1,46 @@
+- Voici un exemple de site web, des erreurs se sont glissées au niveau du code.
+Votre mission est d'apporter les modifications nécessaires pour améliorer le référencement de ce site.
+Attention : on considère que nous sommes dans un environnement de développement 
+ les images n'ont pas besoin d'être réduites et optimisées, de même pour le code qui n'a pas besoin d'être minifié ;
+ cela prendrait trop de temps, mais gardez à l'esprit qu'il faut également le faire avant de déployer en production.
+Voici un plan des choses à vérifier (il n'est pas complet à vous de le compléter) :
+  * Balise <title>
+    - 60 caractères maximum 
+
+  page index.html titre a 80 caratere reduit a 60,  sur la page tarification.html, absence de balise title
+
+
+    - Unique par page
+    - Texte + le mot clé le plus important et si possible au début
+  * Balise meta description
+    - Unique par page
+    - XX caractères maximum
+    - Décrit le contenu de votre page, doit contenir des mots-clés et être en adéquation avec le titre de la page
+  * H1, H2, ...
+    - TODO...
+  * Vérifier la structure du site
+    - Vérifier les balises strong, em, H1, H2, qui symbolisent l'importance du contenu
+  * Les images
+    - Ne doivent pas contenir du texte qui devrait être placé dans le site (les robots ne lisent pas les images)
+    - Toujours accompagnées de l'attribut alt
+    - Responsive
+    - Poids et résolution (Pas demandé pour ce TP)
+  * TODO
+  * Rajouter des liens (maillage interne)
+PS: il suffit de suivre simplement le cours
+
+- Éditer le sitemap.xml pour correspondre aux pages du site
+
+- Éditer le robots.txt
+
+- Rajouter les pages manquantes (blog, à propos, mentions légales)
+
+Aller plus loin :
+- Mettre en place du lazy loading pour les images http://appelsiini.net/projects/lazyload/ 
+Permet un chargement plus rapide d'une page web lorsqu'il y a beaucoup d'image, mais un problème se pose :
+Les robots ou les personnes qui n'ont pas Javascript activé n'auront pas les images chargés.
+La solution est expliquée dans la librairie ci-dessus, il suffit d'utiliser la balise noscript.
+PS: N'oubliez jamais l'attribut alt !
+- Améliorer l'expérience utilisateur (animation, scroll to top, animation du scroll lors d'un clique sur un lien type ancre, ..., modals pour afficher les photos dans une plus grande résolution)
+- Gestion de dépendances
+- Mettre en place Gulp pour minifier le code, optimiser les images et d'autres tâches qui peuvent savérer utiles et pratiques
